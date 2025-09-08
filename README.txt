@@ -1,5 +1,5 @@
 # Anton's AOE2DE XS Scripting Extensions & Resources
-Extensions and resources for the XS(eXtended subroutine) scripting language used in Age of Empires 2 Definitive Edition scenarios.
+Extensions and resources for the XS scripting language used in Age of Empires 2 Definitive Edition scenarios.
 
 ### Subprojects Overview:
 - `std` : C-Like XS Standard Library.

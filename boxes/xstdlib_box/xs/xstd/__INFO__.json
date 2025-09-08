@@ -1,0 +1,21 @@
+{
+    "id":"xsxx",
+    "name":"XS++ Standard Library Support Layer",
+    "brief":"",
+    "version_major":0,
+    "version_minor":0,
+    "version_patch":0,
+    "files":[
+        "__include__.xs",
+        "xsAi.xs",
+        "xsArray.xs",
+        "xsConstants.xs",
+        "xsGame.xs",
+        "xsGeneral.xs",
+        "xsMath.xs",
+        "xsMisc.xs",
+        "xsReadWrite.xs",
+        "xsRule.xs",
+        "xsVector.xs"
+    ]
+}

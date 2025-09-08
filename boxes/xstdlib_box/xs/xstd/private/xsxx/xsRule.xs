@@ -1,0 +1,13 @@
+@pragma-internal-implicit@ void xsDisableRule(string ruleName = "");
+@pragma-internal-implicit@ void xsDisableRuleGroup(string ruleGroupName = "");
+@pragma-internal-implicit@ void xsDisableSelf();
+@pragma-internal-implicit@ void xsEnableRule(string ruleName = "");
+@pragma-internal-implicit@ void xsEnableRuleGroup(string ruleGroupName = "");
+@pragma-internal-implicit@ bool xsIsRuleEnabled(string ruleName = "");
+@pragma-internal-implicit@ bool xsIsRuleGroupEnabled(string ruleGroupName = "");
+@pragma-internal-implicit@ void xsSetRuleMaxInterval(string ruleName = "", int interval = -1);
+@pragma-internal-implicit@ void xsSetRuleMaxIntervalSelf(int interval = -1);
+@pragma-internal-implicit@ void xsSetRuleMinInterval(string ruleName = "", int interval = -1);
+@pragma-internal-implicit@ void xsSetRuleMinIntervalSelf(int interval = -1);
+@pragma-internal-implicit@ void xsSetRulePriority(string ruleName = "", int rulePriority = -1);
+@pragma-internal-implicit@ void xsSetRulePrioritySelf(int rulePriority = -1);

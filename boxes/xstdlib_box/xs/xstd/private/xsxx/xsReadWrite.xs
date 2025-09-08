@@ -1,0 +1,16 @@
+@pragma-internal-implicit@ bool xsCloseFile();
+@pragma-internal-implicit@ bool xsCreateFile(bool append = false);
+@pragma-internal-implicit@ int xsGetDataTypeSize(int type = -1);
+@pragma-internal-implicit@ int xsGetFilePosition();
+@pragma-internal-implicit@ int xsGetFileSize();
+@pragma-internal-implicit@ bool xsOffsetFilePosition(int dataType = -1, bool forward = false);
+@pragma-internal-implicit@ bool xsOpenFile(string filename = "");
+@pragma-internal-implicit@ float xsReadFloat();
+@pragma-internal-implicit@ int xsReadInt();
+@pragma-internal-implicit@ string xsReadString();
+@pragma-internal-implicit@ vector xsReadVector();
+@pragma-internal-implicit@ bool xsSetFilePosition(int byteOffset = -1);
+@pragma-internal-implicit@ bool xsWriteFloat(float data = -1.0);
+@pragma-internal-implicit@ bool xsWriteInt(int data = -1);
+@pragma-internal-implicit@ bool xsWriteString(string data = "");
+@pragma-internal-implicit@ bool xsWriteVector(vector data = vector(-1, -1, -1));

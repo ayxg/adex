@@ -1,0 +1,17 @@
+@pragma-internal-implicit@ float abs(float x = -1.0);
+@pragma-internal-implicit@ float acos(float x = -1.0);
+@pragma-internal-implicit@ float asin(float x = -1.0);
+@pragma-internal-implicit@ float atan(float x = -1.0);
+@pragma-internal-implicit@ float atan2(float y = -1.0, float x = -1.0);
+@pragma-internal-implicit@ float atan2v(vector v = vector(-1, -1, -1));
+@pragma-internal-implicit@ float bitCastToFloat(int number = -1);
+@pragma-internal-implicit@ int bitCastToInt(float number = -1.0);
+@pragma-internal-implicit@ float ceil(float x = -1.0);
+@pragma-internal-implicit@ float cos(float x = -1.0);
+@pragma-internal-implicit@ float exp(float x = -1.0);
+@pragma-internal-implicit@ float floor(float x = -1.0);
+@pragma-internal-implicit@ float pow(float x = -1.0, float y = -1.0);
+@pragma-internal-implicit@ float sin(float x = -1.0);
+@pragma-internal-implicit@ float sqrt(float x = -1.0);
+@pragma-internal-implicit@ float tan(float x = -1.0);
+@pragma-internal-implicit@ int xsCeilToInt(float value = -1.0);

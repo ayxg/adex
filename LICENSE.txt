@@ -9,7 +9,8 @@ published by the Free Software Foundation, version 3.
 to share your scenario's XS source or scenario file. 
 
   If you modify the adex library for an an Age of Empires scenario, you 
-are fully exempt from the AGPL license. 
+are fully exempt from the AGPL license. Though any new discoveries are 
+appericated as contributions to adex.
 
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007

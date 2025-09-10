@@ -5,7 +5,7 @@ Extensions and resources for the XS scripting language used in Age of Empires 2 
 - `xstdlib` :
 	- C-Like XS Standard Library.
 - `adex` :
-	- Game-specific XS extensions. Requires `std`.
+	- Game-specific XS extensions. Requires `xstdlib`.
 	- Enumerated game data arrays. Perpetual WIP, the end goal is to know all the data points.
 - `xsmake`
 	- Basic CMake build system for XS.

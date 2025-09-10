@@ -1,3 +1,10 @@
+                            License Additions
+If you use adex to create an Age of Empires scenario, you don't have 
+to share your scenario's source. 
+
+If you modify the adex library for your scenario, you are exempt from 
+the AGPL license. 
+
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 

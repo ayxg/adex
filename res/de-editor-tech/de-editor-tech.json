@@ -1,0 +1,1764 @@
+{
+  "de-editor-tech": {
+    "0": {
+      "id": 1215,
+      "name": "25% wood, 75% gold"
+    },
+    "1": {
+      "id": 1263,
+      "name": "25% wood, 75% gold"
+    },
+    "2": {
+      "id": 1216,
+      "name": "50% wood, 50% gold"
+    },
+    "3": {
+      "id": 1264,
+      "name": "50% wood, 50% gold"
+    },
+    "4": {
+      "id": 1217,
+      "name": "75% wood, 25% gold"
+    },
+    "5": {
+      "id": 1265,
+      "name": "75% wood, 25% gold"
+    },
+    "6": {
+      "id": 16,
+      "name": "Anarchy"
+    },
+    "7": {
+      "id": 516,
+      "name": "Andean Sling"
+    },
+    "8": {
+      "id": 273,
+      "name": "Arbalester"
+    },
+    "9": {
+      "id": 51,
+      "name": "Architecture"
+    },
+    "10": {
+      "id": 941,
+      "name": "Armenians"
+    },
+    "11": {
+      "id": 573,
+      "name": "Arquebus"
+    },
+    "12": {
+      "id": 608,
+      "name": "Arrowslits"
+    },
+    "13": {
+      "id": 602,
+      "name": "Arson"
+    },
+    "14": {
+      "id": 10,
+      "name": "Artillery"
+    },
+    "15": {
+      "id": 21,
+      "name": "Atheism"
+    },
+    "16": {
+      "id": 460,
+      "name": "Atlatl"
+    },
+    "17": {
+      "id": 319,
+      "name": "Atonement"
+    },
+    "18": {
+      "id": 924,
+      "name": "Aznauri Cavalry"
+    },
+    "19": {
+      "id": 543,
+      "name": "Aztecs"
+    },
+    "20": {
+      "id": 686,
+      "name": "Bagains"
+    },
+    "21": {
+      "id": 883,
+      "name": "Ballistas"
+    },
+    "22": {
+      "id": 93,
+      "name": "Ballistics"
+    },
+    "23": {
+      "id": 17,
+      "name": "Banking"
+    },
+    "24": {
+      "id": -1,
+      "name": "Battle Drills"
+    },
+    "25": {
+      "id": 83,
+      "name": "Bearded Axe"
+    },
+    "26": {
+      "id": 823,
+      "name": "Bengalis"
+    },
+    "27": {
+      "id": 583,
+      "name": "Berbers"
+    },
+    "28": {
+      "id": 28,
+      "name": "Bimaristan"
+    },
+    "29": {
+      "id": 1148,
+      "name": "Bireme"
+    },
+    "30": {
+      "id": 1180,
+      "name": "Blank Technology 0"
+    },
+    "31": {
+      "id": 1181,
+      "name": "Blank Technology 1"
+    },
+    "32": {
+      "id": 1240,
+      "name": "Blank Technology 10"
+    },
+    "33": {
+      "id": 1241,
+      "name": "Blank Technology 11"
+    },
+    "34": {
+      "id": 1242,
+      "name": "Blank Technology 12"
+    },
+    "35": {
+      "id": 1243,
+      "name": "Blank Technology 13"
+    },
+    "36": {
+      "id": 1244,
+      "name": "Blank Technology 14"
+    },
+    "37": {
+      "id": 1245,
+      "name": "Blank Technology 15"
+    },
+    "38": {
+      "id": 1246,
+      "name": "Blank Technology 16"
+    },
+    "39": {
+      "id": 1247,
+      "name": "Blank Technology 17"
+    },
+    "40": {
+      "id": 1248,
+      "name": "Blank Technology 18"
+    },
+    "41": {
+      "id": 1249,
+      "name": "Blank Technology 19"
+    },
+    "42": {
+      "id": 1182,
+      "name": "Blank Technology 2"
+    },
+    "43": {
+      "id": 1183,
+      "name": "Blank Technology 3"
+    },
+    "44": {
+      "id": 1184,
+      "name": "Blank Technology 4"
+    },
+    "45": {
+      "id": 1185,
+      "name": "Blank Technology 5"
+    },
+    "46": {
+      "id": 1186,
+      "name": "Blank Technology 6"
+    },
+    "47": {
+      "id": 1187,
+      "name": "Blank Technology 7"
+    },
+    "48": {
+      "id": 1188,
+      "name": "Blank Technology 8"
+    },
+    "49": {
+      "id": 1189,
+      "name": "Blank Technology 9"
+    },
+    "50": {
+      "id": 75,
+      "name": "Blast Furnace"
+    },
+    "51": {
+      "id": 230,
+      "name": "Block Printing"
+    },
+    "52": {
+      "id": 435,
+      "name": "Bloodlines"
+    },
+    "53": {
+      "id": 200,
+      "name": "Bodkin Arrow"
+    },
+    "54": {
+      "id": 49,
+      "name": "Bogsveigar"
+    },
+    "55": {
+      "id": 777,
+      "name": "Bohemians"
+    },
+    "56": {
+      "id": 1069,
+      "name": "Bolt Magazine"
+    },
+    "57": {
+      "id": 188,
+      "name": "Bombard Cannon"
+    },
+    "58": {
+      "id": 64,
+      "name": "Bombard Tower"
+    },
+    "59": {
+      "id": 203,
+      "name": "Bow Saw"
+    },
+    "60": {
+      "id": 201,
+      "name": "Bracer"
+    },
+    "61": {
+      "id": 461,
+      "name": "Britons"
+    },
+    "62": {
+      "id": 673,
+      "name": "Bulgarians"
+    },
+    "63": {
+      "id": 754,
+      "name": "Burgundian Vineyards"
+    },
+    "64": {
+      "id": 748,
+      "name": "Burgundians"
+    },
+    "65": {
+      "id": 626,
+      "name": "Burmese"
+    },
+    "66": {
+      "id": 464,
+      "name": "Byzantines"
+    },
+    "67": {
+      "id": 37,
+      "name": "Cannon Galleon"
+    },
+    "68": {
+      "id": 96,
+      "name": "Capped Ram"
+    },
+    "69": {
+      "id": 48,
+      "name": "Caravan"
+    },
+    "70": {
+      "id": 374,
+      "name": "Careening"
+    },
+    "71": {
+      "id": 572,
+      "name": "Carrack"
+    },
+    "72": {
+      "id": 19,
+      "name": "Cartography"
+    },
+    "73": {
+      "id": 71,
+      "name": "Castle Age"
+    },
+    "74": {
+      "id": 209,
+      "name": "Cavalier"
+    },
+    "75": {
+      "id": 541,
+      "name": "Celts"
+    },
+    "76": {
+      "id": 82,
+      "name": "Chain Barding Armor"
+    },
+    "77": {
+      "id": 76,
+      "name": "Chain Mail Armor"
+    },
+    "78": {
+      "id": 264,
+      "name": "Champion"
+    },
+    "79": {
+      "id": 264,
+      "name": "Champion"
+    },
+    "80": {
+      "id": 628,
+      "name": "Chatras"
+    },
+    "81": {
+      "id": 47,
+      "name": "Chemistry"
+    },
+    "82": {
+      "id": 463,
+      "name": "Chieftains"
+    },
+    "83": {
+      "id": 52,
+      "name": "Chinese"
+    },
+    "84": {
+      "id": 493,
+      "name": "Chivalry"
+    },
+    "85": {
+      "id": 922,
+      "name": "Cilician Fleet"
+    },
+    "86": {
+      "id": 7,
+      "name": "Citadels"
+    },
+    "87": {
+      "id": 1070,
+      "name": "Coiled Serpent Array"
+    },
+    "88": {
+      "id": 23,
+      "name": "Coinage"
+    },
+    "89": {
+      "id": 884,
+      "name": "Comitatenses"
+    },
+    "90": {
+      "id": 315,
+      "name": "Conscription"
+    },
+    "91": {
+      "id": 514,
+      "name": "Corvinian Army"
+    },
+    "92": {
+      "id": 454,
+      "name": "Counterweights"
+    },
+    "93": {
+      "id": 11,
+      "name": "Crenellations"
+    },
+    "94": {
+      "id": 12,
+      "name": "Crop Rotation"
+    },
+    "95": {
+      "id": 100,
+      "name": "Crossbowman"
+    },
+    "96": {
+      "id": 690,
+      "name": "Cuman Mercenaries"
+    },
+    "97": {
+      "id": 675,
+      "name": "Cumans"
+    },
+    "98": {
+      "id": 104,
+      "name": "Dark Age"
+    },
+    "99": {
+      "id": -1,
+      "name": "Defensive Town Center"
+    },
+    "100": {
+      "id": -1,
+      "name": "Delian League"
+    },
+    "101": {
+      "id": 455,
+      "name": "Detinets"
+    },
+    "102": {
+      "id": 46,
+      "name": "Devotion"
+    },
+    "103": {
+      "id": 1014,
+      "name": "Domestication"
+    },
+    "104": {
+      "id": 623,
+      "name": "Double Crossbow"
+    },
+    "105": {
+      "id": 867,
+      "name": "Double-Bit Axe"
+    },
+    "106": {
+      "id": 1010,
+      "name": "Dragon Ship"
+    },
+    "107": {
+      "id": 822,
+      "name": "Dravidians"
+    },
+    "108": {
+      "id": 6,
+      "name": "Drill"
+    },
+    "109": {
+      "id": 1162,
+      "name": "Drums"
+    },
+    "110": {
+      "id": 513,
+      "name": "Druzhina"
+    },
+    "111": {
+      "id": 375,
+      "name": "Dry Dock"
+    },
+    "112": {
+      "id": 384,
+      "name": "Eagle Warrior"
+    },
+    "113": {
+      "id": -1,
+      "name": "Economic Policy"
+    },
+    "114": {
+      "id": -1,
+      "name": "Economic Town Center"
+    },
+    "115": {
+      "id": 1122,
+      "name": "Eisphora"
+    },
+    "116": {
+      "id": 4,
+      "name": "El Dorado"
+    },
+    "117": {
+      "id": 619,
+      "name": "Elite Arambai"
+    },
+    "118": {
+      "id": 615,
+      "name": "Elite Ballista Elephant"
+    },
+    "119": {
+      "id": 631,
+      "name": "Elite Battle Elephant"
+    },
+    "120": {
+      "id": 398,
+      "name": "Elite Berserk"
+    },
+    "121": {
+      "id": 504,
+      "name": "Elite Boyar"
+    },
+    "122": {
+      "id": 565,
+      "name": "Elite Camel Archer"
+    },
+    "123": {
+      "id": 376,
+      "name": "Elite Cannon Galleon"
+    },
+    "124": {
+      "id": 597,
+      "name": "Elite Caravel"
+    },
+    "125": {
+      "id": 361,
+      "name": "Elite Cataphract"
+    },
+    "126": {
+      "id": 882,
+      "name": "Elite Centurion"
+    },
+    "127": {
+      "id": 830,
+      "name": "Elite Chakram Thrower"
+    },
+    "128": {
+      "id": 362,
+      "name": "Elite Chu Ko Nu"
+    },
+    "129": {
+      "id": 918,
+      "name": "Elite Composite Bowman"
+    },
+    "130": {
+      "id": 60,
+      "name": "Elite Conquistador"
+    },
+    "131": {
+      "id": 751,
+      "name": "Elite Coustillier"
+    },
+    "132": {
+      "id": 434,
+      "name": "Elite Eagle Warrior"
+    },
+    "133": {
+      "id": 481,
+      "name": "Elite Elephant Archer"
+    },
+    "134": {
+      "id": 1074,
+      "name": "Elite Fire Archer"
+    },
+    "135": {
+      "id": 982,
+      "name": "Elite Fire Lancer"
+    },
+    "136": {
+      "id": 1152,
+      "name": "Elite Galley"
+    },
+    "137": {
+      "id": 567,
+      "name": "Elite Gbeto"
+    },
+    "138": {
+      "id": 430,
+      "name": "Elite Genitour"
+    },
+    "139": {
+      "id": 468,
+      "name": "Elite Genoese Crossbowman"
+    },
+    "140": {
+      "id": 840,
+      "name": "Elite Ghulam"
+    },
+    "141": {
+      "id": 1135,
+      "name": "Elite Hippeus"
+    },
+    "142": {
+      "id": 1137,
+      "name": "Elite Hoplite"
+    },
+    "143": {
+      "id": 365,
+      "name": "Elite Huskarl"
+    },
+    "144": {
+      "id": 781,
+      "name": "Elite Hussite Wagon"
+    },
+    "145": {
+      "id": 1115,
+      "name": "Elite Immortal"
+    },
+    "146": {
+      "id": 991,
+      "name": "Elite Iron Pagoda"
+    },
+    "147": {
+      "id": 432,
+      "name": "Elite Jaguar Warrior"
+    },
+    "148": {
+      "id": 369,
+      "name": "Elite Janissary"
+    },
+    "149": {
+      "id": 509,
+      "name": "Elite Kamayuk"
+    },
+    "150": {
+      "id": 617,
+      "name": "Elite Karambit Warrior"
+    },
+    "151": {
+      "id": 680,
+      "name": "Elite Keshik"
+    },
+    "152": {
+      "id": 682,
+      "name": "Elite Kipchak"
+    },
+    "153": {
+      "id": 678,
+      "name": "Elite Konnik"
+    },
+    "154": {
+      "id": 684,
+      "name": "Elite Leitis"
+    },
+    "155": {
+      "id": 1146,
+      "name": "Elite Lembos"
+    },
+    "156": {
+      "id": 1002,
+      "name": "Elite Liao Dao"
+    },
+    "157": {
+      "id": 372,
+      "name": "Elite Longboat"
+    },
+    "158": {
+      "id": 360,
+      "name": "Elite Longbowman"
+    },
+    "159": {
+      "id": 472,
+      "name": "Elite Magyar Huszar"
+    },
+    "160": {
+      "id": 368,
+      "name": "Elite Mameluke"
+    },
+    "161": {
+      "id": 371,
+      "name": "Elite Mangudai"
+    },
+    "162": {
+      "id": 920,
+      "name": "Elite Monaspa"
+    },
+    "163": {
+      "id": 779,
+      "name": "Elite Obuch"
+    },
+    "164": {
+      "id": 563,
+      "name": "Elite Organ Gun"
+    },
+    "165": {
+      "id": 27,
+      "name": "Elite Plumed Archer"
+    },
+    "166": {
+      "id": 967,
+      "name": "Elite Qizilbash Warrior"
+    },
+    "167": {
+      "id": 828,
+      "name": "Elite Ratha"
+    },
+    "168": {
+      "id": 621,
+      "name": "Elite Rattan Archer"
+    },
+    "169": {
+      "id": 366,
+      "name": "Elite Samurai"
+    },
+    "170": {
+      "id": 753,
+      "name": "Elite Serjeant"
+    },
+    "171": {
+      "id": 569,
+      "name": "Elite Shotel Warrior"
+    },
+    "172": {
+      "id": 843,
+      "name": "Elite Shrivamsha Rider"
+    },
+    "173": {
+      "id": 98,
+      "name": "Elite Skirmisher"
+    },
+    "174": {
+      "id": 715,
+      "name": "Elite Steppe Lancer"
+    },
+    "175": {
+      "id": 1125,
+      "name": "Elite Strategos"
+    },
+    "176": {
+      "id": 2,
+      "name": "Elite Tarkan"
+    },
+    "177": {
+      "id": 364,
+      "name": "Elite Teutonic Knight"
+    },
+    "178": {
+      "id": 363,
+      "name": "Elite Throwing Axeman"
+    },
+    "179": {
+      "id": 1036,
+      "name": "Elite Tiger Cavalry"
+    },
+    "180": {
+      "id": 448,
+      "name": "Elite Turtle Ship"
+    },
+    "181": {
+      "id": 826,
+      "name": "Elite Urumi Swordsman"
+    },
+    "182": {
+      "id": 1171,
+      "name": "Elite War Chariot"
+    },
+    "183": {
+      "id": 367,
+      "name": "Elite War Elephant"
+    },
+    "184": {
+      "id": 450,
+      "name": "Elite War Wagon"
+    },
+    "185": {
+      "id": 1064,
+      "name": "Elite White Feather Guard"
+    },
+    "186": {
+      "id": 370,
+      "name": "Elite Woad Raider"
+    },
+    "187": {
+      "id": 557,
+      "name": "Enable Cows"
+    },
+    "188": {
+      "id": 556,
+      "name": "Enable Llamas"
+    },
+    "189": {
+      "id": 555,
+      "name": "Enable Sheep"
+    },
+    "190": {
+      "id": 558,
+      "name": "Enable Turkeys"
+    },
+    "191": {
+      "id": 1223,
+      "name": "Ephorate"
+    },
+    "192": {
+      "id": 581,
+      "name": "Ethiopians"
+    },
+    "193": {
+      "id": 486,
+      "name": "Eupseong"
+    },
+    "194": {
+      "id": 517,
+      "name": "Fabric Shields"
+    },
+    "195": {
+      "id": 45,
+      "name": "Faith"
+    },
+    "196": {
+      "id": 577,
+      "name": "Farimba"
+    },
+    "197": {
+      "id": 246,
+      "name": "Fast Fire Ship"
+    },
+    "198": {
+      "id": 921,
+      "name": "Fereters"
+    },
+    "199": {
+      "id": 252,
+      "name": "Fervor"
+    },
+    "200": {
+      "id": 20,
+      "name": "Feudal Age"
+    },
+    "201": {
+      "id": 756,
+      "name": "First Crusade"
+    },
+    "202": {
+      "id": 755,
+      "name": "Flemish Revolution"
+    },
+    "203": {
+      "id": 199,
+      "name": "Fletching"
+    },
+    "204": {
+      "id": 793,
+      "name": "Folwark"
+    },
+    "205": {
+      "id": 625,
+      "name": "Forced Levy"
+    },
+    "206": {
+      "id": 67,
+      "name": "Forging"
+    },
+    "207": {
+      "id": 996,
+      "name": "Fortified Bastions"
+    },
+    "208": {
+      "id": 929,
+      "name": "Fortified Church"
+    },
+    "209": {
+      "id": 194,
+      "name": "Fortified Wall"
+    },
+    "210": {
+      "id": 493,
+      "name": "Franks"
+    },
+    "211": {
+      "id": 1198,
+      "name": "Free Lembos Spawn"
+    },
+    "212": {
+      "id": 836,
+      "name": "Frontier Guards"
+    },
+    "213": {
+      "id": 5,
+      "name": "Furor Celtica"
+    },
+    "214": {
+      "id": 35,
+      "name": "Galleon"
+    },
+    "215": {
+      "id": 875,
+      "name": "Gambesons"
+    },
+    "216": {
+      "id": 24,
+      "name": "Garland Wars"
+    },
+    "217": {
+      "id": 930,
+      "name": "Georgians"
+    },
+    "218": {
+      "id": 65,
+      "name": "Gillnets"
+    },
+    "219": {
+      "id": 55,
+      "name": "Gold Mining"
+    },
+    "220": {
+      "id": 182,
+      "name": "Gold Shaft Mining"
+    },
+    "221": {
+      "id": 531,
+      "name": "Goths"
+    },
+    "222": {
+      "id": 506,
+      "name": "Grand Trunk Road"
+    },
+    "223": {
+      "id": 462,
+      "name": "Great Wall"
+    },
+    "224": {
+      "id": 464,
+      "name": "Greek Fire"
+    },
+    "225": {
+      "id": 140,
+      "name": "Guard Tower"
+    },
+    "226": {
+      "id": 15,
+      "name": "Guilds"
+    },
+    "227": {
+      "id": 824,
+      "name": "Gurjaras"
+    },
+    "228": {
+      "id": 429,
+      "name": "Halberdier"
+    },
+    "229": {
+      "id": 85,
+      "name": "Hand Cannon"
+    },
+    "230": {
+      "id": 249,
+      "name": "Hand Cart"
+    },
+    "231": {
+      "id": 757,
+      "name": "Hauberk"
+    },
+    "232": {
+      "id": 380,
+      "name": "Heated Shot"
+    },
+    "233": {
+      "id": 236,
+      "name": "Heavy Camel Rider"
+    },
+    "234": {
+      "id": 218,
+      "name": "Heavy Cavalry Archer"
+    },
+    "235": {
+      "id": 244,
+      "name": "Heavy Demolition Ship"
+    },
+    "236": {
+      "id": 1033,
+      "name": "Heavy Hei Guang Cavalry"
+    },
+    "237": {
+      "id": 1155,
+      "name": "Heavy Incendiary Ship"
+    },
+    "238": {
+      "id": 1145,
+      "name": "Heavy Lembos"
+    },
+    "239": {
+      "id": 13,
+      "name": "Heavy Plow"
+    },
+    "240": {
+      "id": 980,
+      "name": "Heavy Rocket Cart"
+    },
+    "241": {
+      "id": 239,
+      "name": "Heavy Scorpion"
+    },
+    "242": {
+      "id": 1130,
+      "name": "Helot Levies"
+    },
+    "243": {
+      "id": 441,
+      "name": "Herbal Medicine"
+    },
+    "244": {
+      "id": 439,
+      "name": "Heresy"
+    },
+    "245": {
+      "id": 691,
+      "name": "Hill Forts"
+    },
+    "246": {
+      "id": 548,
+      "name": "Hindustanis"
+    },
+    "247": {
+      "id": 1226,
+      "name": "Hippagretai"
+    },
+    "248": {
+      "id": 379,
+      "name": "Hoardings"
+    },
+    "249": {
+      "id": 14,
+      "name": "Horse Collar"
+    },
+    "250": {
+      "id": 787,
+      "name": "Houfnice"
+    },
+    "251": {
+      "id": 626,
+      "name": "Howdah"
+    },
+    "252": {
+      "id": 485,
+      "name": "Hul'che Javelineers"
+    },
+    "253": {
+      "id": 483,
+      "name": "Huns"
+    },
+    "254": {
+      "id": 39,
+      "name": "Husbandry"
+    },
+    "255": {
+      "id": 95,
+      "name": "Hussar"
+    },
+    "256": {
+      "id": 785,
+      "name": "Hussite Reforms"
+    },
+    "257": {
+      "id": 1165,
+      "name": "Hypozomata"
+    },
+    "258": {
+      "id": 233,
+      "name": "Illumination"
+    },
+    "259": {
+      "id": 103,
+      "name": "Imperial Age"
+    },
+    "260": {
+      "id": 521,
+      "name": "Imperial Camel Rider"
+    },
+    "261": {
+      "id": 655,
+      "name": "Imperial Skirmisher"
+    },
+    "262": {
+      "id": 516,
+      "name": "Inca"
+    },
+    "263": {
+      "id": 1154,
+      "name": "Incendiary Ship"
+    },
+    "264": {
+      "id": 492,
+      "name": "Inquisition"
+    },
+    "265": {
+      "id": -1,
+      "name": "Iphicratean Tactics"
+    },
+    "266": {
+      "id": 68,
+      "name": "Iron Casting"
+    },
+    "267": {
+      "id": 489,
+      "name": "Ironclad"
+    },
+    "268": {
+      "id": 547,
+      "name": "Italians"
+    },
+    "269": {
+      "id": 59,
+      "name": "Japanese"
+    },
+    "270": {
+      "id": 986,
+      "name": "Jurchens"
+    },
+    "271": {
+      "id": 488,
+      "name": "Kamandaran"
+    },
+    "272": {
+      "id": -1,
+      "name": "Karda"
+    },
+    "273": {
+      "id": 578,
+      "name": "Kasbah"
+    },
+    "274": {
+      "id": 59,
+      "name": "Kataparuto"
+    },
+    "275": {
+      "id": 63,
+      "name": "Keep"
+    },
+    "276": {
+      "id": 988,
+      "name": "Khitans"
+    },
+    "277": {
+      "id": 622,
+      "name": "Khmer"
+    },
+    "278": {
+      "id": 486,
+      "name": "Koreans"
+    },
+    "279": {
+      "id": 1131,
+      "name": "Krypteia"
+    },
+    "280": {
+      "id": 835,
+      "name": "Kshatriyas"
+    },
+    "281": {
+      "id": 1006,
+      "name": "Lamellar Armor"
+    },
+    "282": {
+      "id": 212,
+      "name": "Leather Archer Armor"
+    },
+    "283": {
+      "id": 783,
+      "name": "Lechitic Legacy"
+    },
+    "284": {
+      "id": 885,
+      "name": "Legionary"
+    },
+    "285": {
+      "id": 254,
+      "name": "Light Cavalry"
+    },
+    "286": {
+      "id": 788,
+      "name": "Lithuanians"
+    },
+    "287": {
+      "id": 61,
+      "name": "Logistica"
+    },
+    "288": {
+      "id": 207,
+      "name": "Long Swordsman"
+    },
+    "289": {
+      "id": 22,
+      "name": "Loom"
+    },
+    "290": {
+      "id": 490,
+      "name": "Madrasah"
+    },
+    "291": {
+      "id": 579,
+      "name": "Maghrebi Camels"
+    },
+    "292": {
+      "id": 514,
+      "name": "Magyars"
+    },
+    "293": {
+      "id": 834,
+      "name": "Mahayana"
+    },
+    "294": {
+      "id": 624,
+      "name": "Malay"
+    },
+    "295": {
+      "id": 582,
+      "name": "Malians"
+    },
+    "296": {
+      "id": 222,
+      "name": "Man-at-Arms"
+    },
+    "297": {
+      "id": 627,
+      "name": "Manipur Cavalry"
+    },
+    "298": {
+      "id": 483,
+      "name": "Marauders"
+    },
+    "299": {
+      "id": 50,
+      "name": "Masonry"
+    },
+    "300": {
+      "id": 4,
+      "name": "Maya"
+    },
+    "301": {
+      "id": 831,
+      "name": "Medical Corps"
+    },
+    "302": {
+      "id": -1,
+      "name": "Military Policy"
+    },
+    "303": {
+      "id": -1,
+      "name": "Military Town Center"
+    },
+    "304": {
+      "id": 1062,
+      "name": "Ming Guang Armor"
+    },
+    "305": {
+      "id": 487,
+      "name": "Mongols"
+    },
+    "306": {
+      "id": 1224,
+      "name": "Morai"
+    },
+    "307": {
+      "id": 322,
+      "name": "Murder Holes"
+    },
+    "308": {
+      "id": -1,
+      "name": "Naval Policy"
+    },
+    "309": {
+      "id": 641,
+      "name": "Nomads"
+    },
+    "310": {
+      "id": 257,
+      "name": "Onager"
+    },
+    "311": {
+      "id": 1159,
+      "name": "Onager Ship"
+    },
+    "312": {
+      "id": 1007,
+      "name": "Ordo Cavalry"
+    },
+    "313": {
+      "id": 512,
+      "name": "Orthodoxy"
+    },
+    "314": {
+      "id": 211,
+      "name": "Padded Archer Armor"
+    },
+    "315": {
+      "id": 833,
+      "name": "Paiks"
+    },
+    "316": {
+      "id": 175,
+      "name": "Paladin"
+    },
+    "317": {
+      "id": 867,
+      "name": "Paper Money"
+    },
+    "318": {
+      "id": 57,
+      "name": "Parthian Tactics"
+    },
+    "319": {
+      "id": 1013,
+      "name": "Pastoralism"
+    },
+    "320": {
+      "id": 494,
+      "name": "Pavise"
+    },
+    "321": {
+      "id": 1133,
+      "name": "Peloponnesian League"
+    },
+    "322": {
+      "id": 457,
+      "name": "Perfusion"
+    },
+    "323": {
+      "id": 488,
+      "name": "Persians"
+    },
+    "324": {
+      "id": 197,
+      "name": "Pikeman"
+    },
+    "325": {
+      "id": 902,
+      "name": "Pirotechnia"
+    },
+    "326": {
+      "id": 80,
+      "name": "Plate Barding Armor"
+    },
+    "327": {
+      "id": 77,
+      "name": "Plate Mail Armor"
+    },
+    "328": {
+      "id": 789,
+      "name": "Poles"
+    },
+    "329": {
+      "id": 572,
+      "name": "Portuguese"
+    },
+    "330": {
+      "id": 515,
+      "name": "Recurve Bow"
+    },
+    "331": {
+      "id": 1080,
+      "name": "Red Cliffs Tactics"
+    },
+    "332": {
+      "id": 316,
+      "name": "Redemption"
+    },
+    "333": {
+      "id": -1,
+      "name": "Reed Arrows"
+    },
+    "334": {
+      "id": 742,
+      "name": "Resources last 100% longer"
+    },
+    "335": {
+      "id": 743,
+      "name": "Resources last 125% longer"
+    },
+    "336": {
+      "id": 737,
+      "name": "Resources last 15% longer"
+    },
+    "337": {
+      "id": 744,
+      "name": "Resources last 150% longer"
+    },
+    "338": {
+      "id": 745,
+      "name": "Resources last 175% longer"
+    },
+    "339": {
+      "id": 746,
+      "name": "Resources last 200% longer"
+    },
+    "340": {
+      "id": 738,
+      "name": "Resources last 30% longer"
+    },
+    "341": {
+      "id": 747,
+      "name": "Resources last 300% longer"
+    },
+    "342": {
+      "id": 739,
+      "name": "Resources last 40% longer"
+    },
+    "343": {
+      "id": 740,
+      "name": "Resources last 50% longer"
+    },
+    "344": {
+      "id": 745,
+      "name": "Resources last 75% longer"
+    },
+    "345": {
+      "id": 525,
+      "name": "Revetments"
+    },
+    "346": {
+      "id": 219,
+      "name": "Ring Archer Armor"
+    },
+    "347": {
+      "id": 52,
+      "name": "Rocketry"
+    },
+    "348": {
+      "id": 880,
+      "name": "Romans"
+    },
+    "349": {
+      "id": 574,
+      "name": "Royal Heirs"
+    },
+    "350": {
+      "id": 231,
+      "name": "Sanctity"
+    },
+    "351": {
+      "id": 321,
+      "name": "Sappers"
+    },
+    "352": {
+      "id": 490,
+      "name": "Saracens"
+    },
+    "353": {
+      "id": 526,
+      "name": "Savar"
+    },
+    "354": {
+      "id": 81,
+      "name": "Scale Barding Armor"
+    },
+    "355": {
+      "id": 74,
+      "name": "Scale Mail Armor"
+    },
+    "356": {
+      "id": 1161,
+      "name": "Scoop Nets"
+    },
+    "357": {
+      "id": 94,
+      "name": "Scorpion"
+    },
+    "358": {
+      "id": 1112,
+      "name": "Scythed Chariots"
+    },
+    "359": {
+      "id": 658,
+      "name": "Set maximum population (no Houses)"
+    },
+    "360": {
+      "id": 507,
+      "name": "Shatagni"
+    },
+    "361": {
+      "id": 445,
+      "name": "Shinkichon"
+    },
+    "362": {
+      "id": 373,
+      "name": "Shipwright"
+    },
+    "363": {
+      "id": 373,
+      "name": "Shipwright"
+    },
+    "364": {
+      "id": 1012,
+      "name": "Shu"
+    },
+    "365": {
+      "id": 749,
+      "name": "Sicilians"
+    },
+    "366": {
+      "id": 838,
+      "name": "Siege Elephant"
+    },
+    "367": {
+      "id": 377,
+      "name": "Siege Engineers"
+    },
+    "368": {
+      "id": 320,
+      "name": "Siege Onager"
+    },
+    "369": {
+      "id": 255,
+      "name": "Siege Ram"
+    },
+    "370": {
+      "id": 687,
+      "name": "Silk Armor"
+    },
+    "371": {
+      "id": 499,
+      "name": "Silk Road"
+    },
+    "372": {
+      "id": 491,
+      "name": "Sipahi"
+    },
+    "373": {
+      "id": 1082,
+      "name": "Sitting Tiger"
+    },
+    "374": {
+      "id": 1225,
+      "name": "Skeuophoroi"
+    },
+    "375": {
+      "id": 512,
+      "name": "Slavs"
+    },
+    "376": {
+      "id": 440,
+      "name": "Spanish"
+    },
+    "377": {
+      "id": 1110,
+      "name": "Sparabaras"
+    },
+    "378": {
+      "id": 1126,
+      "name": "Spartans"
+    },
+    "379": {
+      "id": 408,
+      "name": "Spies/Treason"
+    },
+    "380": {
+      "id": 215,
+      "name": "Squires"
+    },
+    "381": {
+      "id": 689,
+      "name": "Steppe Husbandry"
+    },
+    "382": {
+      "id": 685,
+      "name": "Stirrups"
+    },
+    "383": {
+      "id": 278,
+      "name": "Stone Mining"
+    },
+    "384": {
+      "id": 279,
+      "name": "Stone Shaft Mining"
+    },
+    "385": {
+      "id": 807,
+      "name": "Stone Shaft Mining gold generation"
+    },
+    "386": {
+      "id": 482,
+      "name": "Stronghold"
+    },
+    "387": {
+      "id": 716,
+      "name": "Supplies"
+    },
+    "388": {
+      "id": 440,
+      "name": "Supremacy"
+    },
+    "389": {
+      "id": 923,
+      "name": "Svan Towers"
+    },
+    "390": {
+      "id": 782,
+      "name": "Szlachta Privileges"
+    },
+    "391": {
+      "id": 674,
+      "name": "Tatars"
+    },
+    "392": {
+      "id": 1121,
+      "name": "Taxiarchs"
+    },
+    "393": {
+      "id": 968,
+      "name": "Technology Placeholder 01"
+    },
+    "394": {
+      "id": 969,
+      "name": "Technology Placeholder 02"
+    },
+    "395": {
+      "id": 970,
+      "name": "Technology Placeholder 03"
+    },
+    "396": {
+      "id": 971,
+      "name": "Technology Placeholder 04"
+    },
+    "397": {
+      "id": 972,
+      "name": "Technology Placeholder 05"
+    },
+    "398": {
+      "id": 973,
+      "name": "Technology Placeholder 06"
+    },
+    "399": {
+      "id": 974,
+      "name": "Technology Placeholder 07"
+    },
+    "400": {
+      "id": 975,
+      "name": "Technology Placeholder 08"
+    },
+    "401": {
+      "id": 976,
+      "name": "Technology Placeholder 09"
+    },
+    "402": {
+      "id": 977,
+      "name": "Technology Placeholder 10"
+    },
+    "403": {
+      "id": 489,
+      "name": "Teutons"
+    },
+    "404": {
+      "id": 669,
+      "name": "Thalassocracy"
+    },
+    "405": {
+      "id": 438,
+      "name": "Theocracy"
+    },
+    "406": {
+      "id": 437,
+      "name": "Thumb Ring"
+    },
+    "407": {
+      "id": 997,
+      "name": "Thunderclap Bombs"
+    },
+    "408": {
+      "id": 576,
+      "name": "Tigui"
+    },
+    "409": {
+      "id": 688,
+      "name": "Timurid Siegecraft"
+    },
+    "410": {
+      "id": 575,
+      "name": "Torsion Engines"
+    },
+    "411": {
+      "id": 692,
+      "name": "Tower Shields"
+    },
+    "412": {
+      "id": 639,
+      "name": "Town Center Spawn"
+    },
+    "413": {
+      "id": 280,
+      "name": "Town Patrol"
+    },
+    "414": {
+      "id": 8,
+      "name": "Town Watch"
+    },
+    "415": {
+      "id": 90,
+      "name": "Tracking"
+    },
+    "416": {
+      "id": 1012,
+      "name": "Transhumance"
+    },
+    "417": {
+      "id": 54,
+      "name": "Treadmill Crane"
+    },
+    "418": {
+      "id": 1149,
+      "name": "Trireme"
+    },
+    "419": {
+      "id": 1061,
+      "name": "Tuntian"
+    },
+    "420": {
+      "id": 538,
+      "name": "Turks"
+    },
+    "421": {
+      "id": 622,
+      "name": "Tusk Swords"
+    },
+    "422": {
+      "id": 217,
+      "name": "Two-Handed Swordsman"
+    },
+    "423": {
+      "id": 767,
+      "name": "Two-Man Saw"
+    },
+    "424": {
+      "id": 628,
+      "name": "Vietnamese"
+    },
+    "425": {
+      "id": 665,
+      "name": "Vietnamese Vision"
+    },
+    "426": {
+      "id": 539,
+      "name": "Vikings"
+    },
+    "427": {
+      "id": 784,
+      "name": "Wagenburg Tactics"
+    },
+    "428": {
+      "id": 34,
+      "name": "War Galley"
+    },
+    "429": {
+      "id": 1151,
+      "name": "War Galley - Antiquity"
+    },
+    "430": {
+      "id": 1144,
+      "name": "War Lembos"
+    },
+    "431": {
+      "id": 461,
+      "name": "Warwolf"
+    },
+    "432": {
+      "id": 213,
+      "name": "Wheelbarrow"
+    },
+    "433": {
+      "id": 786,
+      "name": "Winged Hussar"
+    },
+    "434": {
+      "id": 832,
+      "name": "Wootz Steel"
+    },
+    "435": {
+      "id": 1031,
+      "name": "Wu"
+    },
+    "436": {
+      "id": 1132,
+      "name": "Xyphos"
+    },
+    "437": {
+      "id": 484,
+      "name": "Yasama"
+    },
+    "438": {
+      "id": 3,
+      "name": "Yeomen"
+    },
+    "439": {
+      "id": 9,
+      "name": "Zealotry"
+    }
+  }
+}

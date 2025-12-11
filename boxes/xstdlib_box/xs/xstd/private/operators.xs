@@ -4,38 +4,46 @@
 include "@xs-local@/xstdlib";
 
 // XS Missing C-Language Operators
-  // Unary Inversion
+
+// Unary Inversion
 mutable bool not(bool x = required_bool) @fn-decl-bool@
 mutable int negate(int x = required_int) @fn-decl-int@
 mutable float negate_float(float x = required_float) @fn-decl-float@
-  // Bitwise
+
+// Bitwise
 mutable int band(int x = required_int, int y = required_int) @fn-decl-int@
 mutable int bor(int x = required_int, int y = required_int) @fn-decl-int@
 mutable int bxor(int x = required_int, int y = required_int) @fn-decl-int@
 mutable int bnot(int x = required_int) @fn-decl-int@
-  // Bit Shift
+
+// Bit Shift
 mutable int blsh(int x = required_int, int shift = required_int) @fn-decl-int@ // left shift
 mutable int brsh(int x = required_int, int shift = required_int) @fn-decl-int@ // right shift
+
 // C++ Bit Manipulation Operations from <bit>
 mutable float bitcast_itof(int x = required_int) @fn-decl-float@ // reinterpret the object representation of one type as that of another
 mutable int bitcast_ftoi(float x = required_float) @fn-decl-int@
 
 mutable int byteswap(int x = required_int) @fn-decl-int@ // reverses the bytes in the given integer value
-  // Integral powers of 2
+
+// Integral powers of 2
 mutable bool has_single_bit(int x = required_int) @fn-decl-bool@ // checks if a number is an integral pwr of 2
 mutable int bit_ceil(int x = required_int) @fn-decl-int@ //finds the smallest integral pwr of 2 not less than the given value
 mutable int bit_floor(int x = required_int) @fn-decl-int@ // finds the largest integral pwr of 2 not greater than the given value
 mutable int bit_width(int x = required_int) @fn-decl-int@ // finds the smallest number of bits needed to represent the given value
-  // Rotating
+
+// Rotating
 mutable int rotl(int x = required_int, int shift = 0) @fn-decl-int@ // computes the rt of bitwise left-rotation
 mutable int rotr(int x = required_int, int shift = 0) @fn-decl-int@// computes the rt of bitwise right-rotation
-  // Counting
+
+// Counting
 mutable int countl_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the most significant bit
 mutable int countl_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the most significant bit
 mutable int countr_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the least significant bit
 mutable int countr_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the least significant bit
 mutable int popcount(int x = required_int) @fn-decl-int@ // counts the number of 1 bits in an unsigned integer
-  // Endian
+
+// Endian
 mutable bool is_little_endian()@fn-decl-bool@
 
 bool not(bool x = required_bool){

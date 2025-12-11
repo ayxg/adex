@@ -8,21 +8,25 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Type Casting
 ///////////////////////////////////////////////////////////////////////////////
+
 // Float ->
 mutable int ftoi(float v = required_float) @fn-decl-int@  ///> Allows setting all int values by casting from float.
 mutable bool ftob(float v = required_float) @fn-decl-bool@  
 mutable string ftos(float v = required_float) @fn-decl-string@  
 mutable @Vec3@ ftov(float v = required_float) @fn-decl-vec3@  
+
 // Integer ->
 mutable int itof(int v = required_int) @fn-decl-int@  
 mutable bool itob(int v = required_int) @fn-decl-bool@  
 mutable string itos(int v = required_int) @fn-decl-string@  
 mutable @Vec3@ itov(int v = required_int) @fn-decl-vec3@ 
+
 // Bool ->
 mutable int btoi(bool v = required_bool) @fn-decl-int@  
 mutable float btof(bool v = required_bool) @fn-decl-float@  
 mutable string btos(bool v = required_bool) @fn-decl-string@  
 mutable @Vec3@ btov(bool v = required_bool) @fn-decl-vec3@ 
+
 // String -> ? not possible with the xs string. Wait until I implement a string class. 
 // How to implement :
 // In theory you could have an int array which stores "characters". 
@@ -38,9 +42,9 @@ mutable @Vec3@ btov(bool v = required_bool) @fn-decl-vec3@
     set_str(idx++,"o");  
     set_str(idx++,"n");
 */ 
+
 // Vec3(vector) ->
 // Additional 'vec3_cast_type' argument indiciates how to interpret the vec3's values.
-
 extern const int kVec3Cast_X = 0; ///> default := x
 extern const int kVec3Cast_Y = 1; ///> := y
 extern const int kVec3Cast_Z = 2; ///> := y

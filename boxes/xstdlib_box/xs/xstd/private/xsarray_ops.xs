@@ -1,9 +1,11 @@
 // Anton's Extended xsArray Operations
 mutable bool xsArrayIsEmpty(int arrayId = nullid) @fn-virtual-bool@ // xsArrayGetSize(arrayId) == 0
 mutable bool xsArrayIsNull(int arrayId = nullid) @fn-virtual-bool@  // arrayId < 0
+
 // xsArrayErase[T] 
 //  : Erase element at index, re-align vector elements and resize.
-mutable bool xsArrayErase(int arrayId = nullid, int begin = nullid,int end = nullid)  @fn-virtual-bool@
+mutable bool xsArrayErase(int arrayId = nullid, int begin = nullid,int end = nullid) @fn-virtual-bool@
+
 // xsArrayClear[T] 
 //  : Set array size to 0.
 mutable int xsArrayClearInt(int arrayId = nullid) @fn-virtual-int@
@@ -11,13 +13,16 @@ mutable int xsArrayClearString(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayClearBool(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayClearFloat(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayClearVector(int arrayId = nullid) @fn-virtual-int@
+
 // xsArrayPush[T] 
-//  : Increase array size by 1 and set last element. !!Extend first, then set new elements for more efficient insertion.
+//  : Increase array size by 1 and set last element. 
+//    !!Extend first, then set new elements for more efficient insertion.
 mutable int xsArrayPushInt(int arrayId = nullid, int value = 0) @fn-virtual-int@
 mutable int xsArrayPushString(int arrayId = nullid, string value = "") @fn-virtual-int@
 mutable int xsArrayPushBool(int arrayId = nullid, bool value = false) @fn-virtual-int@
 mutable int xsArrayPushFloat(int arrayId = nullid, float value = 0.0) @fn-virtual-int@
 mutable int xsArrayPushVector(int arrayId = nullid, vector value = vector(0.0,0.0,0.0)) @fn-virtual-int@
+
 // xsArrayPop[T] 
 //  : Reduce array size by 1.
 mutable int xsArrayPopInt(int arrayId = nullid) @fn-virtual-int@
@@ -25,15 +30,18 @@ mutable int xsArrayPopString(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayPopBool(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayPopFloat(int arrayId = nullid) @fn-virtual-int@
 mutable int xsArrayPopVector(int arrayId = nullid) @fn-virtual-int@
+
 // xsArrayErase[T] 
-//    : Erase elements from index [from...to - 1]. Re-align all other elements and shrink array to fit.
+//    : Erase elements from index [from...to - 1]. 
+//      Re-align all other elements and shrink array to fit.
 //      No re-alignment occurs if elements are a range from the end of the array.
 //      If arg 'to' is not set. Erases element at index arg 'from'.
-bool xsArrayEraseInt(int arrayId = nullid, int from = nosize,int to = nosize)@fn-virtual-bool@
-bool xsArrayEraseBool(int arrayId = nullid, int from = nosize,int to = nosize)@fn-virtual-bool@
-bool xsArrayEraseFloat(int arrayId = nullid, int from = nosize,int to = nosize)@fn-virtual-bool@
-bool xsArrayEraseString(int arrayId = nullid, int from = nosize,int to = nosize)@fn-virtual-bool@
-bool xsArrayEraseVector(int arrayId = nullid, int from = nosize,int to = nosize)@fn-virtual-bool@
+bool xsArrayEraseInt(int arrayId = nullid, int from = nosize,int to = nosize) @fn-virtual-bool@
+bool xsArrayEraseBool(int arrayId = nullid, int from = nosize,int to = nosize) @fn-virtual-bool@
+bool xsArrayEraseFloat(int arrayId = nullid, int from = nosize,int to = nosize) @fn-virtual-bool@
+bool xsArrayEraseString(int arrayId = nullid, int from = nosize,int to = nosize) @fn-virtual-bool@
+bool xsArrayEraseVector(int arrayId = nullid, int from = nosize,int to = nosize) @fn-virtual-bool@
+
 // xsArrayExtend[T] 
 //    : Increase array size by arg 'by', given no 'by' array size doubles. Returns new array size.
 mutable int xsArrayExtendInt(int arrayId = nullid, int by = nullid) @fn-virtual-int@
@@ -142,7 +150,7 @@ bool xsArrayEraseBool(int arrayId = nullid, int from = nosize,int to = nosize){
   return (true);
 }
 
-bool xsArrayEraseFloat(int arrayId = nullid,  int from = nosize,int to = nosize){
+bool xsArrayEraseFloat(int arrayId = nullid, int from = nosize,int to = nosize){
   int size = xsArrayGetSize(arrayId);
   if(idx < 0 || idx >= size) return (false);
   while(idx < size){
@@ -153,7 +161,7 @@ bool xsArrayEraseFloat(int arrayId = nullid,  int from = nosize,int to = nosize)
   return (true);
 }
 
-bool xsArrayEraseString(int arrayId = nullid,  int from = nosize,int to = nosize){
+bool xsArrayEraseString(int arrayId = nullid, int from = nosize,int to = nosize){
   int size = xsArrayGetSize(arrayId);
   if(idx < 0 || idx >= size) return (false);
   while(idx < size){
@@ -164,7 +172,7 @@ bool xsArrayEraseString(int arrayId = nullid,  int from = nosize,int to = nosize
   return (true);
 }
 
-bool xsArrayEraseVector(int arrayId = nullid,  int from = nosize,int to = nosize){
+bool xsArrayEraseVector(int arrayId = nullid, int from = nosize,int to = nosize){
   int size = xsArrayGetSize(arrayId);
   if(idx < 0 || idx >= size) return (false);
   while(idx < size){

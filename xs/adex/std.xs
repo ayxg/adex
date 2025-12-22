@@ -2,27 +2,36 @@
 // Fundamental language support functions
 // Additional fundamental type manipulation/creation functions which are usually expected in a C-like language.
 //  - Type Casting
-//  - Integer Support
+//  - Integer Constants
+//  - Negation operators
+//  - Bitwise operations
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#include "predef.xs"
+#include "keywords.xs"
 
 ///////////////////////////////////////////////////////////////////////////////
 // Type Casting
 ///////////////////////////////////////////////////////////////////////////////
+
 // Float ->
-mutable int ftoi(float v = required_float) @fn-decl-int@  ///> Allows setting all int values by casting from float.
-mutable bool ftob(float v = required_float) @fn-decl-bool@  
-mutable string ftos(float v = required_float) @fn-decl-string@  
-mutable @Vec3@ ftov(float v = required_float) @fn-decl-vec3@  
+/// Allows setting all int values by casting from float.
+@decl@ int ftoi(float v = required_float); 
+@decl@ bool ftob(float v = required_float);  
+@decl@ string ftos(float v = required_float); 
+@decl@ @Vec3@ ftov(float v = required_float); 
+
 // Integer ->
-mutable int itof(int v = required_int) @fn-decl-int@  
-mutable bool itob(int v = required_int) @fn-decl-bool@  
-mutable string itos(int v = required_int) @fn-decl-string@  
-mutable @Vec3@ itov(int v = required_int) @fn-decl-vec3@ 
+@decl@ int itof(int v = required_int);
+@decl@ bool itob(int v = required_int);
+@decl@ string itos(int v = required_int); 
+@decl@ @Vec3@ itov(int v = required_int);
+
 // Bool ->
-mutable int btoi(bool v = required_bool) @fn-decl-int@  
-mutable float btof(bool v = required_bool) @fn-decl-float@  
-mutable string btos(bool v = required_bool) @fn-decl-string@  
-mutable @Vec3@ btov(bool v = required_bool) @fn-decl-vec3@ 
+@decl@ int btoi(bool v = required_bool);
+@decl@ float btof(bool v = required_bool);
+@decl@ string btos(bool v = required_bool);
+@decl@ @Vec3@ btov(bool v = required_bool);
+
 // String -> ? not possible with the xs string. Wait until I implement a string class. 
 // How to implement :
 // In theory you could have an int array which stores "characters". 
@@ -37,78 +46,81 @@ mutable @Vec3@ btov(bool v = required_bool) @fn-decl-vec3@
     set_str(idx++,"t");  
     set_str(idx++,"o");  
     set_str(idx++,"n");
-*/ 
+*/
+
+ 
 // Vec3(vector) ->
 // Additional 'vec3_cast_type' argument indiciates how to interpret the vec3's values.
+extern const int kVec3Cast_X = 0;         ///> default := x
+extern const int kVec3Cast_Y = 1;         ///> := y
+extern const int kVec3Cast_Z = 2;         ///> := z
+extern const int kVec3Cast_Add = 3;       ///> := x + y + z
+extern const int kVec3Cast_Sub = 4;       ///> := x - y - z
+extern const int kVec3Cast_Mul = 5;       ///> := x * y * z
+extern const int kVec3Cast_Div = 6;       ///> := x / y / z
+extern const int kVec3Cast_Rem = 7;       ///> := x % y % z
+extern const int kVec3Cast_NormalX = 8;   ///> := normalized x
+extern const int kVec3Cast_NormalY = 9;   ///> := normalized y
+extern const int kVec3Cast_NormalZ = 10;  ///> := normalized z
+extern const int kVec3Cast_Length = 11;   ///> := vec3 length
+extern const int kVec3_XYZ = 12;          ///> string-> "($x,$y,$z)", same as kVec3Cast_Add for scalars.
+extern const int kVec3_NormalXYZ = 13;    ///> string-> "($normal.x,$normal.y,$normal.z)", 
+                                          ///> Normalize then kVec3Cast_Add for scalars.  
 
-extern const int kVec3Cast_X = 0; ///> default := x
-extern const int kVec3Cast_Y = 1; ///> := y
-extern const int kVec3Cast_Z = 2; ///> := y
-extern const int kVec3Cast_Add = 3; ///> := x + y + z
-extern const int kVec3Cast_Sub = 4; ///> := x - y - z
-extern const int kVec3Cast_Mul = 5; ///> := x * y * z
-extern const int kVec3Cast_Div = 6; ///> := x / y / z
-extern const int kVec3Cast_Rem = 7; ///> := x % y % z
-extern const int kVec3Cast_NormalX = 8; ///> := normalized x
-extern const int kVec3Cast_NormalY = 9; ///> := normalized y
-extern const int kVec3Cast_NormalZ = 10; ///> := normalized z
-extern const int kVec3Cast_Length = 11; ///> := vec3 length
-extern const int kVec3_XYZ = 12; ///> string-> "($x,$y,$z)", same as kVec3Cast_Add for scalars.
-extern const int kVec3_NormalXYZ = 13; ///> string-> "($normal.x,$normal.y,$normal.z)", 
-                                       ///> Normalize then kVec3Cast_Add for scalars.  
-
-mutable int vtoi(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-int@  
-mutable float vtof(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-float@  
-mutable bool vtob(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-bool@
-mutable string vtos(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-string@  
+@decl@ int vtoi(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-int@  
+@decl@ float vtof(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-float@  
+@decl@ bool vtob(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-bool@
+@decl@ string vtos(@Vec3@ v = required_vec3,int vec3_cast_type = kVec3Cast_X) @fn-decl-string@  
 
 
 ///////////////////////////////////////////////////////////////////////////////
 // Integer support
 ///////////////////////////////////////////////////////////////////////////////
-mutable int kIntSize() @fn-decl-int@ // 4 - Integer size in bytes. Seems to always be a 32 bit int in XS.
-mutable int kIntMax() @fn-decl-int@  ///> 32-bit max constant.
-mutable int kIntMin() @fn-decl-int@  ///> 32-bit min constant.
-mutable int kUint16Max() @fn-decl-int@  ///> 16-bit unsigned max constant.
-mutable int kUint8Max() @fn-decl-int@  ///> 16-bit unsigned max constant.
+@decl@ int kIntSize() @fn-decl-int@ // 4 - Integer size in bytes. Seems to always be a 32 bit int in XS.
+@decl@ int kIntMax() @fn-decl-int@  ///> 32-bit max constant.
+@decl@ int kIntMin() @fn-decl-int@  ///> 32-bit min constant.
+@decl@ int kUint16Max() @fn-decl-int@  ///> 16-bit unsigned max constant.
+@decl@ int kUint8Max() @fn-decl-int@  ///> 16-bit unsigned max constant.
 
+///////////////////////////////////////////////////////////////////////////////
 // XS Missing C-Language Operators
-  // Unary Inversion
-mutable bool not(bool x = required_bool) @fn-decl-bool@
-mutable int negate(int x = required_int) @fn-decl-int@
-mutable float negate_float(float x = required_float) @fn-decl-float@
-  // Bitwise
-mutable int band(int x = required_int, int y = required_int) @fn-decl-int@
-mutable int bor(int x = required_int, int y = required_int) @fn-decl-int@
-mutable int bxor(int x = required_int, int y = required_int) @fn-decl-int@
-mutable int bnot(int x = required_int) @fn-decl-int@
-  // Bit Shift
-mutable int blsh(int x = required_int, int shift = required_int) @fn-decl-int@ // left shift
-mutable int brsh(int x = required_int, int shift = required_int) @fn-decl-int@ // right shift
-// C++ Bit Manipulation Operations from <bit>
-mutable float bitcast_itof(int x = required_int) @fn-decl-float@ // reinterpret the object representation of one type as that of another
-mutable int bitcast_ftoi(float x = required_float) @fn-decl-int@
+///////////////////////////////////////////////////////////////////////////////
 
-mutable int byteswap(int x = required_int) @fn-decl-int@ // reverses the bytes in the given integer value
-  // Integral powers of 2
-mutable bool has_single_bit(int x = required_int) @fn-decl-bool@ // checks if a number is an integral pwr of 2
-mutable int bit_ceil(int x = required_int) @fn-decl-int@ //finds the smallest integral pwr of 2 not less than the given value
-mutable int bit_floor(int x = required_int) @fn-decl-int@ // finds the largest integral pwr of 2 not greater than the given value
-mutable int bit_width(int x = required_int) @fn-decl-int@ // finds the smallest number of bits needed to represent the given value
-  // Rotating
-mutable int rotl(int x = required_int, int shift = 0) @fn-decl-int@ // computes the rt of bitwise left-rotation
-mutable int rotr(int x = required_int, int shift = 0) @fn-decl-int@// computes the rt of bitwise right-rotation
-  // Counting
-mutable int countl_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the most significant bit
-mutable int countl_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the most significant bit
-mutable int countr_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the least significant bit
-mutable int countr_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the least significant bit
-mutable int popcount(int x = required_int) @fn-decl-int@ // counts the number of 1 bits in an unsigned integer
-  // Endian
-mutable bool is_little_endian()@fn-decl-bool@
+// Unary Inversion
+@decl@ bool not(bool x = required_bool) @fn-decl-bool@
+@decl@ int negate(int x = required_int) @fn-decl-int@
+@decl@ float negate_float(float x = required_float) @fn-decl-float@
+// Bitwise
+@decl@ int band(int x = required_int, int y = required_int) @fn-decl-int@
+@decl@ int bor(int x = required_int, int y = required_int) @fn-decl-int@
+@decl@ int bxor(int x = required_int, int y = required_int) @fn-decl-int@
+@decl@ int bnot(int x = required_int) @fn-decl-int@
+// Bit Shift
+@decl@ int blsh(int x = required_int, int shift = required_int) @fn-decl-int@ // left shift
+@decl@ int brsh(int x = required_int, int shift = required_int) @fn-decl-int@ // right shift
+// C++ Bit Manipulation Operations from <bit>
+@decl@ float bitcast_itof(int x = required_int) @fn-decl-float@ // reinterpret the object representation of one type as that of another
+@decl@ int bitcast_ftoi(float x = required_float) @fn-decl-int@
+@decl@ int byteswap(int x = required_int) @fn-decl-int@ // reverses the bytes in the given integer value
+// Integral powers of 2
+@decl@ bool has_single_bit(int x = required_int) @fn-decl-bool@ // checks if a number is an integral pwr of 2
+@decl@ int bit_ceil(int x = required_int) @fn-decl-int@ //finds the smallest integral pwr of 2 not less than the given value
+@decl@ int bit_floor(int x = required_int) @fn-decl-int@ // finds the largest integral pwr of 2 not greater than the given value
+@decl@ int bit_width(int x = required_int) @fn-decl-int@ // finds the smallest number of bits needed to represent the given value
+// Rotating
+@decl@ int rotl(int x = required_int, int shift = 0) @fn-decl-int@ // computes the rt of bitwise left-rotation
+@decl@ int rotr(int x = required_int, int shift = 0) @fn-decl-int@// computes the rt of bitwise right-rotation
+// Counting
+@decl@ int countl_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the most significant bit
+@decl@ int countl_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the most significant bit
+@decl@ int countr_zero(int x = required_int) @fn-decl-int@ // counts the number of consecutive ​0​ bits, starting from the least significant bit
+@decl@ int countr_one(int x = required_int) @fn-decl-int@ // counts the number of consecutive 1 bits, starting from the least significant bit
+@decl@ int popcount(int x = required_int) @fn-decl-int@ // counts the number of 1 bits in an unsigned integer
+// Endian
+@decl@ bool is_little_endian()@fn-decl-bool@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// @impl xstdlib
+// impl
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 int ftoi(float v = required_float) { 

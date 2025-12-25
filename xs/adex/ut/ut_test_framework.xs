@@ -1,5 +1,7 @@
-bool test_test_framework(){
-  TEST("test_test_framework"); // Doesnt have to be the same as function name
+#include "adex/test_framework.xs";
+
+bool ut_test_framework(){
+  TEST("ut_test_framework"); // Doesnt have to be the same as function name
 	if(EXPECT_TRUE(true) != true) xsChatData("'EXPECT_TRUE' function impl failure.");
 	if(EXPECT_FALSE(false) != true) xsChatData("'EXPECT_FALSE' function impl failure.");
 	if(EXPECT_EQ(42, 42) != true) xsChatData("'EXPECT_EQ' function impl failure.");

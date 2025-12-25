@@ -84,7 +84,7 @@ class AdexCli :
     result = preprocessor.process(args.script)
     if result == ADEX_EXIT_FAIL:
       return ADEX_EXIT_FAIL
-    Path(args.out).write_text("".join(preprocessor.output))
+    Path(args.out).write_text("".join(preprocessor.output), encoding="utf-8")
     return ADEX_EXIT_SUCCESS
 
 class XsPreprocessor:

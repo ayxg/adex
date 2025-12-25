@@ -1,12 +1,22 @@
-include "std/operators";
+#include "adex/test_framework.xs";
+#include "adex/std.xs";
 
-mutable void test_bitwise() @fn-decl-void@
-mutable bool test_bitwise_basic() @fn-decl-bool@
-mutable bool test_byteswap() @fn-decl-bool@
-mutable bool test_power_of_2() @fn-decl-bool@
-mutable bool test_rotation() @fn-decl-bool@
-mutable bool test_count() @fn-decl-bool@
-mutable bool test_endian() @fn-decl-bool@
+@decl@ void ut_bitwise();
+@decl@ bool test_bitwise_basic();
+@decl@ bool test_byteswap();
+@decl@ bool test_power_of_2();
+@decl@ bool test_rotation();
+@decl@ bool test_count();
+@decl@ bool test_endian();
+
+void test_bitwise(){
+  test_bitwise_basic();
+  test_byteswap();
+  test_power_of_2();
+  test_rotation();
+  test_count();
+  test_endian();
+}
 
 bool test_bitwise_basic() {
     TEST("test_bitwise_basic");

@@ -410,12 +410,7 @@ int bxor(int x = required_int, int y = required_int) {
 }
 
 int bnot(int x = required_int) {
-  // find the next pwr of two greater than a to determine bit width
-  int mask = 1;
-  while (mask <= kIntMax() / 2 && mask <= x) mask = mask * 2;
-  if (mask <= kIntMax() / 2) mask = mask * 2 - 1;
-  else mask = kIntMax();
-  return (mask - x);
+  return negate(x) - 1;
 }
 
 @forward-decl@ int blsh(int x = required_int, int shift = required_int){return (-1);}

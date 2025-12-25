@@ -101,7 +101,7 @@ bool EXPECT_FALSE(bool v = false){
 
 bool EXPECT_EQ(int a = 0, int b = 0){
   if(a == b) return (true);
-  return (__minitest_fail("Expected equality."));
+  return (__minitest_fail("Expected equality. L: " + a + " | R: " + b));
 }
 
 bool EXPECT_NE(int a = 0, int b = 0){

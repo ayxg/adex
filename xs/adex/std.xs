@@ -352,7 +352,7 @@ int kIntMin(){ return (ftoi(-2147483648.0)); }
 
 int kUint16Max(){ return (65535); }
 
-int kUint8Max(){ return (256); }
+int kUint8Max(){ return (255); }
 
 bool not(bool x = required_bool){
 	if(x) return (false);
@@ -360,11 +360,11 @@ bool not(bool x = required_bool){
 }
 
 int negate(int x = required_int) {
-  return (-1 * x);
+  return (0 - x);
 }
 
 float negate_float(float x = required_float){
-  return (-1.0 * x);
+  return (0.0 - x);
 }
 
 int band(int x = required_int, int y = required_int) {
@@ -410,20 +410,29 @@ int bxor(int x = required_int, int y = required_int) {
 }
 
 int bnot(int x = required_int) {
-  return negate(x) - 1;
+  return (negate(x) - 1);
 }
 
 @forward-decl@ int blsh(int x = required_int, int shift = required_int){return (-1);}
 @forward-decl@ int brsh(int x = required_int, int shift = required_int){return (-1);}
 
+int ipow2(int n = 0) {
+  int result = 1;
+  for (i = 0; < n) {
+    result = result * 2;
+  }
+  return (result);
+}
+
+
 int blsh(int x = required_int, int shift = required_int) {
   if (shift < 0) return (brsh(x, negate(shift)));
-  return (x * ftoi(pow(2, shift)));
+  return (x * ipow2(shift));
 }
 
 int brsh(int x = required_int, int shift = required_int) {
   if (shift < 0) return (blsh(x, negate(shift)));
-  return (x / ftoi(pow(2, shift)));
+  return (x / ipow2(shift));
 }
 
 float bitcast_itof(int x = required_int) {
@@ -436,10 +445,20 @@ int bitcast_ftoi(float x = required_float) {
 
 int byteswap(int x = required_int) {
   int rt = 0;
-  for(i = 0; < kIntSize()) {
-    int byte_val = band(brsh(x, i * 8), kUint8Max());
-    rt = bor(rt, blsh(byte_val, (kIntSize() - 1 - i) * 8));
+  int i = 0;
+
+  for (i = 0; < kIntSize()) {
+    int byte_val = x % 256;
+    if (byte_val < 0) byte_val = byte_val + 256;
+
+    rt = rt * 256 + byte_val;
+
+    if (x < 0)
+      x = (x - 255) / 256;
+    else
+      x = x / 256;
   }
+
   return (rt);
 }
 

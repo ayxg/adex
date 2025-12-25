@@ -37,7 +37,7 @@ bool test_bitwise_basic() {
 
 bool test_byteswap() {
     TEST("test_byteswap");
-    EXPECT_EQ(byteswap(ftoi(305419896.0)), ftoi(2018915346.0));  // 0x12345678 -> 0x78563412
+    EXPECT_EQ(byteswap(305419896), 18915346 + (20 * 100000000));  // 0x12345678 -> 0x78563412
     EXPECT_EQ(byteswap(1), 16777216);                    // 0x00000001 -> 0x01000000
     EXPECT_EQ(byteswap(byteswap(ftoi(305419896.0))), ftoi(305419896.0)); // Double swap
     return (TEST_END());
@@ -126,7 +126,7 @@ bool test_endian() {
 
 void ut_bitwise(){
   test_bitwise_basic();
-  //test_byteswap();
+  test_byteswap();
   //test_power_of_2();
   //test_rotation();
   //test_count();

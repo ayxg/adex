@@ -127,7 +127,7 @@ bool test_endian() {
 void ut_bitwise(){
   test_bitwise_basic();
   test_byteswap();
-  //test_power_of_2();
+  test_power_of_2();
   //test_rotation();
   //test_count();
   //test_endian();

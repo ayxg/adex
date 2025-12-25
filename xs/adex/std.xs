@@ -468,12 +468,16 @@ bool has_single_bit(int x = required_int) {
 
 int bit_ceil(int x = required_int) {
   if (x <= 1) return (1);
+  if (x < 0) return (0);
+
   int rt = 1;
+  int max_pow = blsh(1,(kIntSize() * 8 - 2)); // highest safe power-of-two
+
   while (rt < x) {
-    // Check for overflow
-    if (rt > kIntMax() / 2) return (rt);
-    rt = blsh(rt, 1);
+    if (rt > max_pow) return (0); // overflow
+    rt = rt * 2;
   }
+
   return (rt);
 }
 

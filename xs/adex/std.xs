@@ -418,6 +418,9 @@ int bnot(int x = required_int) {
   return (mask - x);
 }
 
+@forward-decl@ int blsh(int x = required_int, int shift = required_int){return (-1);}
+@forward-decl@ int brsh(int x = required_int, int shift = required_int){return (-1);}
+
 int blsh(int x = required_int, int shift = required_int) {
   if (shift < 0) return (brsh(x, negate(shift)));
   return (x * ftoi(pow(2, shift)));

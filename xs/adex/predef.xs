@@ -17,6 +17,9 @@
 // Function declaration for reference.
 #define decl //
 
+// Forward declaration, function is NOT meant to be overloaded.
+#define forward-decl mutable
+
 // More accurate alias for XS language 'vector' type.
 #define Vec3 vector
 

@@ -9,15 +9,6 @@
 @decl@ bool test_count();
 @decl@ bool test_endian();
 
-void test_bitwise(){
-  test_bitwise_basic();
-  test_byteswap();
-  test_power_of_2();
-  test_rotation();
-  test_count();
-  test_endian();
-}
-
 bool test_bitwise_basic() {
     TEST("test_bitwise_basic");
     EXPECT_EQ(band(10, 12), 8);    // 1010 & 1100 = 1000 (8)
@@ -131,4 +122,13 @@ bool test_endian() {
     TEST("test_endian");
     EXPECT_TRUE(true == is_little_endian());
     return (TEST_END());
+}
+
+void ut_bitwise(){
+  test_bitwise_basic();
+  test_byteswap();
+  test_power_of_2();
+  test_rotation();
+  test_count();
+  test_endian();
 }

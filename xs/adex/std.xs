@@ -23,8 +23,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // Float ->
-/// Allows setting all int values by casting from float.
-@decl@ int ftoi(float v = required_float);
+@decl@ int ftoi(float v = required_float); /// Allows setting all int values by casting from float.
 @decl@ bool ftob(float v = required_float);
 @decl@ string ftos(float v = required_float);
 @decl@ @Vec3@ ftov(float v = required_float);

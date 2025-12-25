@@ -46,9 +46,9 @@ bool test_bitwise_basic() {
 
 bool test_byteswap() {
     TEST("test_byteswap");
-    EXPECT_EQ(byteswap(305419896), 2018915346);  // 0x12345678 -> 0x78563412
-    EXPECT_EQ(byteswap(1), 16777216);            // 0x00000001 -> 0x01000000
-    EXPECT_EQ(byteswap(byteswap(305419896)), 305419896); // Double swap
+    EXPECT_EQ(byteswap(ftoi(305419896.0)), ftoi(2018915346.0));  // 0x12345678 -> 0x78563412
+    EXPECT_EQ(byteswap(1), 16777216);                    // 0x00000001 -> 0x01000000
+    EXPECT_EQ(byteswap(byteswap(ftoi(305419896.0))), ftoi(305419896.0)); // Double swap
     return (TEST_END());
 }
 
@@ -93,11 +93,11 @@ bool test_rotation() {
 
     EXPECT_EQ(rotl(128, 1), 1);      // 10000000 << 1 = 00000001 (1)
     EXPECT_EQ(rotl(176, 2), 194);    // 10110000 << 2 = 11000010 (194)
-    EXPECT_EQ(rotl(2147483648, 1), 1); // 10000000000000000000000000000000 << 1 = 1
+    EXPECT_EQ(rotl(ftoi(2147483648.0), 1), 1); // 10000000000000000000000000000000 << 1 = 1
 
-    EXPECT_EQ(rotr(1, 1), 2147483648); // 00000000000000000000000000000001 >> 1 = 10000000000000000000000000000000
+    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0)); // 00000000000000000000000000000001 >> 1 = 10000000000000000000000000000000
     EXPECT_EQ(rotr(194, 2), 176);    // 11000010 >> 2 = 10110000 (176)
-    EXPECT_EQ(rotr(1, 1), 2147483648); // 1 >> 1 = 2147483648
+    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0)); // 1 >> 1 = 2147483648
 
     return (TEST_END());
 }
@@ -107,14 +107,14 @@ bool test_count() {
 
     EXPECT_EQ(countl_zero(0), 32);           // All zeros
     EXPECT_EQ(countl_zero(1), 31);           // 000...001
-    EXPECT_EQ(countl_zero(2147483648), 0);   // MSB set (10000000000000000000000000000000)
+    EXPECT_EQ(countl_zero(ftoi(2147483648.0)), 0);   // MSB set (10000000000000000000000000000000)
 
     EXPECT_EQ(countl_one(-1), 32);           // All ones (two's complement)
     EXPECT_EQ(countl_one(-16777216), 8);     // First 8 bits are ones
 
     EXPECT_EQ(countr_zero(0), 32);           // All zeros
     EXPECT_EQ(countr_zero(1), 0);            // LSB set
-    EXPECT_EQ(countr_zero(2147483648), 31);  // Only MSB set
+    EXPECT_EQ(countr_zero(ftoi(2147483648.0)), 31);  // Only MSB set
 
     EXPECT_EQ(countr_one(-1), 32);           // All ones
     EXPECT_EQ(countr_one(15), 4);            // Last 4 bits are ones
@@ -122,7 +122,7 @@ bool test_count() {
     EXPECT_EQ(popcount(0), 0);               // No ones
     EXPECT_EQ(popcount(-1), 32);             // All ones
     EXPECT_EQ(popcount(15), 4);              // 4 ones
-    EXPECT_EQ(popcount(2863311530), 16);     // 16 ones (pattern: 10101010101010101010101010101010)
+    EXPECT_EQ(popcount(ftoi(2863311530.0)), 16);     // 16 ones (pattern: 10101010101010101010101010101010)
 
     return (TEST_END());
 }

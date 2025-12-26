@@ -23,7 +23,7 @@ def handle_generate_de_tech(aoe_data):
 
 def handle_generate_de_xx_triggers(aoe_data):
   de_xx_triggers.de_xx_triggers_scenario(
-    aoe_data, 
+    aoe_data,
     PY_DATA_SOURCE_PATH + "/dej-scenarios/dej-scenario-debugger-0-0-0.aoe2scenario",
     PY_DATA_BINARY_PATH + "/dej-scenario-debugger-0-0-0.aoe2scenario"
   )
@@ -50,7 +50,7 @@ def main():
     prog='aoea-utils',
     description='[Age Of Empires 2 : Definitive Edition Analyzer] Python Utils',
   )
-  parser.add_argument('generate', type=str, 
+  parser.add_argument('generate', type=str,
     help="""Type data generate. "ALL" to generate all files. Data:
   - de_editor_tech: DEEditorTech.json
   - de_tech: DETech.json
@@ -73,7 +73,7 @@ def main():
   elif args.generate == "djs_debugger":
     handle_generate_djs_debugger()
   elif args.generate == "remove_all_triggers":
-    handle_remove_all_triggers();
+    handle_remove_all_triggers()
   else:
     print("Invalid generate argument.")
 

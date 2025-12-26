@@ -82,13 +82,13 @@ bool test_power_of_2() {
 bool test_rotation() {
     TEST("test_rotation");
 
-    EXPECT_EQ(rotl(128, 1), 1);      // 10000000 << 1 = 00000001 (1)
-    EXPECT_EQ(rotl(176, 2), 194);    // 10110000 << 2 = 11000010 (194)
-    EXPECT_EQ(rotl(ftoi(2147483648.0), 1), 1); // 10000000000000000000000000000000 << 1 = 1
+    EXPECT_EQ(rotl(128, 1), 256);
+    EXPECT_EQ(rotl(176, 2), 704);
+    EXPECT_EQ(rotl((20 * 100000000) + 147483648, 1), 1);
 
-    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0)); // 00000000000000000000000000000001 >> 1 = 10000000000000000000000000000000
-    EXPECT_EQ(rotr(194, 2), 176);    // 11000010 >> 2 = 10110000 (176)
-    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0)); // 1 >> 1 = 2147483648
+    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0));
+    EXPECT_EQ(rotr(194, 2), 176);
+    EXPECT_EQ(rotr(1, 1), ftoi(2147483648.0));
 
     return (TEST_END());
 }
@@ -128,7 +128,7 @@ void ut_bitwise(){
   test_bitwise_basic();
   test_byteswap();
   test_power_of_2();
-  //test_rotation();
-  //test_count();
-  //test_endian();
+  test_rotation();
+  test_count();
+  test_endian();
 }

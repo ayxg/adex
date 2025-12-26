@@ -37,18 +37,22 @@
 
 @decl@ void TEST(string name = "");
 @decl@ bool TEST_END();
-@decl@ bool EXPECT_TRUE(bool v = false);
-@decl@ bool EXPECT_FALSE(bool v = false);
-@decl@ bool EXPECT_EQ(int a = 0, int b = 0);
-@decl@ bool EXPECT_NE(int a = 0, int b = 0);
-@decl@ bool EXPECT_GT(int a = 0, int b = 0);
-@decl@ bool EXPECT_GE(int a = 0, int b = 0);
-@decl@ bool EXPECT_LT(int a = 0, int b = 0);
-@decl@ bool EXPECT_LE(int a = 0, int b = 0);
+@decl@ bool EXPECT_TRUE(bool v = false, string msg = "");
+@decl@ bool EXPECT_FALSE(bool v = false, string msg = "");
+@decl@ bool EXPECT_EQ(int a = 0, int b = 0, string msg = "");
+@decl@ bool EXPECT_NE(int a = 0, int b = 0, string msg = "");
+@decl@ bool EXPECT_GT(int a = 0, int b = 0, string msg = "");
+@decl@ bool EXPECT_GE(int a = 0, int b = 0, string msg = "");
+@decl@ bool EXPECT_LT(int a = 0, int b = 0, string msg = "");
+@decl@ bool EXPECT_LE(int a = 0, int b = 0, string msg = "");
 
-@decl@ bool EXPECT_EQ_STRING(string a = "", string b = "");
-@decl@ bool EXPECT_NE_STRING(string a = "", string b = "");
+@decl@ bool EXPECT_EQ_STRING(string a = "", string b = "", string msg = "");
+@decl@ bool EXPECT_NE_STRING(string a = "", string b = "", string msg = "");
 
+@decl@ bool EXPECT_EQ_FLOAT(float a = 0.0, float b = 0.0, string msg = "");
+@decl@ bool EXPECT_NE_FLOAT(float a = 0.0, float b = 0.0, string msg = "");
+@decl@ bool EXPECT_GT_FLOAT(float a = 0.0, float b = 0.0, string msg = "");
+@decl@ bool EXPECT_LT_FLOAT(float a = 0.0, float b = 0.0, string msg = "");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // impl
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -89,54 +93,74 @@ void TEST(string name = ""){
   __minitest_curr_test_state(true, true);
 }
 
-bool EXPECT_TRUE(bool v = false){
+bool EXPECT_TRUE(bool v = false, string msg = ""){
   if(v) return (true);
-  return (__minitest_fail("Expected true."));
+  return (__minitest_fail("Expected true." "[" + msg + "]"));
 }
 
-bool EXPECT_FALSE(bool v = false){
+bool EXPECT_FALSE(bool v = false, string msg = ""){
   if(v == false) return (true);
-  return (__minitest_fail("Expected false."));
+  return (__minitest_fail("Expected false." "[" + msg + "]"));
 }
 
-bool EXPECT_EQ(int a = 0, int b = 0){
+bool EXPECT_EQ(int a = 0, int b = 0, string msg = ""){
   if(a == b) return (true);
-  return (__minitest_fail("Expected equality. L: " + a + " | R: " + b));
+  return (__minitest_fail("Expected equality. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_NE(int a = 0, int b = 0){
+bool EXPECT_NE(int a = 0, int b = 0, string msg = ""){
   if(a != b) return (true);
-  return (__minitest_fail("Expected inequality."));
+  return (__minitest_fail("Expected inequality. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_GT(int a = 0, int b = 0){
+bool EXPECT_GT(int a = 0, int b = 0, string msg = ""){
   if(a > b) return (true);
-  return (__minitest_fail("Expected greater than."));
+  return (__minitest_fail("Expected greater than. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_GE(int a = 0, int b = 0){
+bool EXPECT_GE(int a = 0, int b = 0, string msg = ""){
   if(a >= b) return (true);
-  return (__minitest_fail("Expected greater than or equal."));
+  return (__minitest_fail("Expected greater than or equal. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_LT(int a = 0, int b = 0){
+bool EXPECT_LT(int a = 0, int b = 0, string msg = ""){
   if(a < b) return (true);
-  return (__minitest_fail("Expected less than."));
+  return (__minitest_fail("Expected less than. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_LE(int a = 0, int b = 0){
+bool EXPECT_LE(int a = 0, int b = 0, string msg = ""){
   if(a <= b) return (true);
-  return (__minitest_fail("Expected less than or equal."));
+  return (__minitest_fail("Expected less than or equal. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_EQ_STRING(string a = "", string b = ""){
+bool EXPECT_EQ_STRING(string a = "", string b = "", string msg = ""){
   if(a == b) return (true);
-  return (__minitest_fail("Expected string equality."));
+  return (__minitest_fail("Expected string equality. [" + msg + "] L: " + a + " | R: " + b));
 }
 
-bool EXPECT_NE_STRING(string a = "", string b = ""){
+bool EXPECT_NE_STRING(string a = "", string b = "", string msg = ""){
   if(a != b) return (true);
-  return (__minitest_fail("Expected string inequality."));
+  return (__minitest_fail("Expected string inequality. [" + msg + "] L: " + a + " | R: " + b));
+}
+
+bool EXPECT_EQ_FLOAT(float a = 0.0, float b = 0.0, string msg = ""){
+  if(a == b) return (true);
+  return (__minitest_fail("Expected float equality. [" + msg + "] L: " + a + " | R: " + b));
+}
+
+bool EXPECT_NE_FLOAT(float a = 0.0, float b = 0.0, string msg = ""){
+  if(a != b) return (true);
+  return (__minitest_fail("Expected float inequality. [" + msg + "] L: " + a + " | R: " + b));
+}
+
+bool EXPECT_GT_FLOAT(float a = 0.0, float b = 0.0, string msg = ""){
+  if(a > b) return (true);
+  return (__minitest_fail("Expected float greater than. [" + msg + "] L: " + a + " | R: " + b));
+}
+
+bool EXPECT_LT_FLOAT(float a = 0.0, float b = 0.0, string msg = ""){
+  if(a < b) return (true);
+  return (__minitest_fail("Expected float less than. [" + msg + "] L: " + a + " | R: " + b));
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
